@@ -9,7 +9,7 @@ on: push
 jobs:
   # docs：https://github.com/peaceiris/actions-gh-pages
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
@@ -28,5 +28,5 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: zpc2222/hugo-blog.github.io # 修改为自己的地址
           publish_dir: ./public
-        #   keep_files: true
+          keep_files: true
           publish_branch: master
