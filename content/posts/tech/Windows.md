@@ -1,15 +1,16 @@
 ---
-title: "技术"
+title: "Sindows"
 date: 2022-09-05T00:17:58+08:00
 lastmod: 2022-09-05T00:17:58+08:00
 author: ["藏锋"]
 keywords: 
-- 
+- jvm
 categories: 
-- 
-tags: 
 - tech
-description: ""
+tags: 
+- java
+- tech
+description: "windows命令"
 weight:
 slug: ""
 draft: false # 是否为草稿
@@ -28,6 +29,9 @@ cover:
     relative: false
 ---
 
+# windows命令
+1. 查看端口占用PID
+   netstat -aon|findstr "9000"
 
-
-
+   查看进程  tasklist|findstr "9088"
+   杀进程      taskkill /T /F /PID 9088

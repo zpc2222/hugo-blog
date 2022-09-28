@@ -1,0 +1,54 @@
+---
+title: "Shell脚本"
+date: 2022-09-05T00:17:58+08:00
+lastmod: 2022-09-05T00:17:58+08:00
+author: ["藏锋"]
+keywords: 
+- jvm
+categories: 
+- tech
+tags: 
+- java
+- tech
+description: "linux环境运行的脚本"
+weight:
+slug: ""
+draft: false # 是否为草稿
+comments: true
+reward: true # 打赏
+mermaid: true #是否开启mermaid
+showToc: true # 显示目录
+TocOpen: true # 自动展开目录
+hidemeta: false # 是否隐藏文章的元信息，如发布日期、作者等
+disableShare: true # 底部不显示分享栏
+showbreadcrumbs: true #顶部显示路径
+cover:
+    image: "" #图片路径例如：posts/tech/123/123.png
+    caption: "" #图片底部描述
+    alt: ""
+    relative: false
+---
+
+shell启动脚本
+```shell
+java  -Xms1024m -Xmx1024m -Xmn512m -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:7665 -jar oc-app-test.jar &
+java -jar-Dnet.java.games.input.librarypath=/home/oc/oc-app-test -Xdebug-Xrunjdwp:transport=dt_socket,suspend=n,server=y,address=*:7665/home/oc/oc-app-test/*.jar &
+
+```
+
+nccloud启动脚本
+```shell
+#!/bin/sh
+
+#根据端口号查询对应的pid
+#pid=$(netstat -nlp | grep :$port | awk '{print $7}' | awk -F"/" '{ print $1 }');
+pid=$(ps -ef | grep '[j]ava -jar -Dnet.java.games.input.librarypath=/home/iom/nc-cloud' | awk '{print $2}');
+
+#杀掉对应的进程，如果pid不存在，则不执行
+if [  -n  "$pid"  ];  then
+    kill $pid;
+    sleep 2
+fi
+
+java -jar -Dnet.java.games.input.librarypath=/home/iom/nc-cloud -Xdebug -Xrunjdwp:transport=dt_socket,suspend=n,server=y,address=*:7666 /home/iom/nc-cloud/*.jar --spring.profiles.active=dev &
+```

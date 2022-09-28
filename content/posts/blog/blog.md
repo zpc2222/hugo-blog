@@ -8,7 +8,7 @@ keywords:
 categories: 
 - 博客
 tags: 
-- blog
+- 博客
 description: "用hugo写的第一篇Markdown格式的博客"
 weight:
 slug: ""

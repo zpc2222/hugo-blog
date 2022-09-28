@@ -1,15 +1,16 @@
 ---
-title: "工具"
+title: "rocketMQ"
 date: 2022-09-05T00:17:58+08:00
 lastmod: 2022-09-05T00:17:58+08:00
 author: ["藏锋"]
 keywords: 
-- 
+- jvm
 categories: 
-- 
-tags: 
 - tech
-description: ""
+tags: 
+- java
+- tech
+description: "rocketMQ的命令使用"
 weight:
 slug: ""
 draft: false # 是否为草稿
@@ -28,6 +29,20 @@ cover:
     relative: false
 ---
 
+ ```shell
+### 1.启动nameserver
+nohup sh bin/mqnamesrv &
+#### 2.启动broker
+nohup sh bin/mqbroker -n 139.196.206.182:9876 -c conf/broker.conf autoCreateTopicEnable=true &
 
+## 查看日志
+tail -f ~/logs/rocketmqlogs/namesrv.log
+tail -f ~/logs/rocketmqlogs/broker.log
+查看所有topic
+sh mqadmin topicList -n 139.196.206.182:9876
 
-
+## 1.关闭NameServer
+sh bin/mqshutdown namesrv
+## 2.关闭Broker
+sh bin/mqshutdown broker
+```

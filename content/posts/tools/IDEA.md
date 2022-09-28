@@ -1,15 +1,16 @@
 ---
-title: "生活"
-date: 2022-09-05T00:18:15+08:00
-lastmod: 2022-09-05T00:18:15+08:00
+title: "IDEA"
+date: 2022-09-28T00:14:01+08:00
+lastmod: 2022-09-28T00:14:01+08:00
 author: ["藏锋"]
 keywords: 
-- 
+- git
+- tools
 categories: 
-- 
+- tools
 tags: 
-- life
-description: ""
+- tools
+description: "Java开发神器的使用"
 weight:
 slug: ""
 draft: false # 是否为草稿
@@ -30,4 +31,10 @@ cover:
 
 
 
-
+插件名|功能
+--|--
+mybatisX |直接跳转到对面的xml中
+Power Mode |忘了
+Rainbow Brankets +|大括号明显
+SequenceDiagram|接口流程图
+**GitToolBox**|git日志随时看
