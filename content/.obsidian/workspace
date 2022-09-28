@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "links.md",
+            "file": "posts/_index.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "links.md",
+                "file": "posts/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "links.md",
+                "file": "posts/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "links.md"
+                "file": "posts/_index.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "6c8ceb7092a38532",
   "lastOpenFiles": [
-    "search.md",
-    "links.md",
-    "archives.md",
-    "about.md",
+    "posts/tools/tools.md",
+    "posts/tech/tech.md",
+    "posts/read/_index.md",
     "posts/read/read.md",
-    "posts/_index.md",
-    "posts/blog/_index.md",
-    "posts/tools/_index.md",
-    "posts/tech/_index.md",
-    "posts/tech/tech.md"
+    "posts/life/life.md",
+    "posts/life/_index.md",
+    "posts/blog/blog-eq1.md",
+    "posts/blog/blog.md",
+    "links.md",
+    "search.md"
   ]
 }

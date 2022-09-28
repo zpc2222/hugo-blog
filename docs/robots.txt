@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://zpc2222.github.io/sitemap.xml

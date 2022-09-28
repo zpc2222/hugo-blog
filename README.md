@@ -1,4 +1,4 @@
-语言：中文 | [English](https://github.com/xyming108/sulv-hugo-papermod/blob/main/static/README_EN.md)
+语言：中文
 
 > 该主题根据Hugo PaperMod主题修改而来: https://github.com/adityatelange/hugo-PaperMod
 
@@ -14,36 +14,8 @@
 
 ## 3. 修改信息
 
-模板内部有许多个人信息需要自己配置，请耐心修改完，可以参考博主的建站教程：[https://www.sulvblog.cn/posts/blog/](https://www.sulvblog.cn/posts/blog/)
+模板内部有许多个人信息需要自己配置，请耐心修改完，可以参考建站教程：[https://www.sulvblog.cn/posts/blog/](https://www.sulvblog.cn/posts/blog/)
 
-## 4. Hugo博客交流群
-
-🎉🎉 787018782 🎉🎉
-
-## 5. shortcodes使用方法
-
-`bilibili: {{< bilibili BV1Fh411e7ZH(填 bvid) >}}`
-
-`youtube: {{< youtube w7Ft2ymGmfc >}}`
-
-`ppt: {{< ppt src="网址" >}}`
-
-`douban: {{< douban src="网址" >}}`
-
-```
-# src中的链接一定不要加https://或http://，可以选择不加www；若desc写了，则在浏览器会显示desc的值
-link: {{< link src="www.sulvblog.cn" desc="https://www.sulvblog.cn" >}}
-```
-
-```
-gallery:
-
-{{< gallery >}}
-{{< figure src="https://www.sulvblog.cn/posts/read/structural_thinking/0.png" >}}
-{{< figure src="https://www.sulvblog.cn/posts/read/structural_thinking/0.png" >}}
-{{< /gallery >}}
-```
-
-## 5. 可能遇到的问题
+## 4. 可能遇到的问题
 
 1. 有些使用者会部署到github，可能遇到跨系统的问题，如提示`LF will be replaced by CRLF in ******`，这时输入命令：`git config core.autocrlf false`，解决换行符自动转换的问题。

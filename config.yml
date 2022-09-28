@@ -1,8 +1,8 @@
 baseURL: https://zpc2222.github.io # 绑定的域名
-languageCode: zh-cn # en-us
+languageCode: zh-cn
 title: 我的个人小站
-theme: PaperMod  # 主题名字，和themes文件夹下的一致
-publishDir: docs
+theme: hugo-PaperMod  # 主题名字，和themes文件夹下的一致
+
 enableInlineShortcodes: true
 enableEmoji: true # 允许使用 Emoji 表情，建议 true
 enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
@@ -15,15 +15,15 @@ buildExpired: false
 googleAnalytics:  # 谷歌统计
 # Copyright: 藏锋
 
-paginate: 15    # 首页每页显示的文章数
+paginate: 10   # 首页每页显示的文章数
 
 minify:
     disableXML: true
-    # minifyOutput: true
+    minifyOutput: true
 
 permalinks: # 访问博客时网址的显示形式
   post: "/:title/"
-  # post: "/:year/:month/:day/:title/"
+  post: "/:year/:month/:day/:title/"
 
 defaultContentLanguage: en # 最顶部首先展示的语言页面
 defaultContentLanguageInSubdir: true
@@ -142,7 +142,7 @@ params:
         favicon32x32: "img/Q.gif"
         apple_touch_icon: "img/Q.gif"
         safari_pinned_tab: "img/Q.gif"
-
+        disableFingerprinting: true
     cover:
         hidden: false # hide everywhere but not in structured data
         hiddenInList: false # hide on list pages and home
