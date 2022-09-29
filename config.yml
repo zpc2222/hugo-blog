@@ -36,8 +36,8 @@ languages:
         enabled: true
         title: (〃'▽'〃)
         subtitle: 
-        subtitle: "🧨人生三大真理：<br/>暴力真的可以解决一切，<br/>帅真的可以当饭吃，<br/>有钱真的可以为所欲为。<br/>"
-        imageUrl: "img/wangzhan.jpg"
+        subtitle: "🧨人生三大真理：<br/>暴力真的可以解决一切，<br/>帅真的可以当饭吃，<br/>有钱真的可以为所欲为。<br/> <br/> <br/>3️⃣💯6️⃣🔟行，行行出BUG。"
+        imageUrl: "img/Q.gif"
         imageTitle: 
         imageWidth: 150
         imageHeight: 150
@@ -166,8 +166,8 @@ params:
 
     # twikoo评论
     twikoo:
-      version: 1.5.8
-      id:  # 填写自己的twikoo id
+      version: 1.6.7
+      id:  https://vercel-zpc2222.vercel.app # 填写自己的twikoo id
       region:  # 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数，请看twikoo官方文档
 
 taxonomies:

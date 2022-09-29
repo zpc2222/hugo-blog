@@ -10,11 +10,16 @@ disableShare: true
 comments: true
 reward: false
 showbreadcrumbs: false
+cover:
+    image: "img/guanggao.jpg" #图片路径例如：posts/tech/123/123.png
+    caption: "" #图片底部描述
+    alt: ""
+    relative: false
 ---
 
 <div class="friend">
 
-{{< friend name="我的个人小站" url="https://zpc2222.github.io" logo="https://zpc2222.github.io/img/Q.gif" word="一个记录技术、阅读、生活的小站" >}}
+{{< friend name="我的个人小站" url="https://zpc2222.github.io" logo="https://zpc2222.github.io/img/Q.gif" word="一个记录技术、生活、分享的小站" >}}
 
 
 </div>
@@ -49,9 +54,14 @@ showbreadcrumbs: false
 
 <br/>
 
-<div style="font-size: 20px;">👉Hugo博客交流群</div>
+<div style="font-size: 20px;">👉广告位招租
+ <div style="width: 80%; height: 300px; border: 1px solid red;margin: 0px;padding: 0px;">
+    <img src="https://zpc2222.github.io/img/guanggao.jpg" alt="" style="width:100%;height:100%;object-fit: cover;">
+  </div>
+</div>
+ 
 
-> 787018782
+
 
 
 
