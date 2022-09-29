@@ -55,9 +55,7 @@ cover:
 <br/>
 
 <div style="font-size: 20px;">👉广告位招租
- <div style="width: 80%; height: 300px; border: 1px solid red;margin: 0px;padding: 0px;">
-    <img src="https://zpc2222.github.io/img/guanggao.jpg" alt="" style="width:100%;height:100%;object-fit: cover;">
-  </div>
+ <img src="/img/guanggao.jpg" style="width:100%;height:100%;object-fit: cover;">
 </div>
  
 

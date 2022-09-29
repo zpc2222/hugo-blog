@@ -60,20 +60,9 @@
 
         {{- if .Param "reward" }}
         <div class="post-reward">
-            <div style="padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; font-size:16px; text-align: center;">
-                <div id="QR" style="opacity: 0;">
-                    <div id="wechat" style="display: inline-block">
-                        <a class="fancybox" rel="group">
-                            <img id="wechat_qr" src="{{ .Site.Params.WechatPay | absURL }}" alt="wechat_pay"></a>
-                        <p>微信</p>
-                    </div>
-                    <div id="alipay" style="display: inline-block">
-                        <a class="fancybox" rel="group">
-                            <img id="alipay_qr" src="{{ .Site.Params.Alipay | absURL }}" alt="alipay"></a>
-                        <p>支付宝</p>
-                    </div>
-                </div>
-                <button id="rewardButton"
+		<span style="text-align: center;display:block;">☕ 请我喝杯咖啡吧 ヾ(^▽^*))) </span>
+		  <span> <br/></span>
+		  <button id="rewardButton"
                         onclick="
                     var qr = document.getElementById('QR');
                     if (qr.style.opacity === '0') {
@@ -82,8 +71,22 @@
                         qr.style.opacity='0'
                     }"
                 >
-                    <span>🧧 鼓励</span>
+                    <span>赞赏</span>
                 </button>
+            <div style="padding: 0 0 0 0; margin: 0 0 0 0; width: 100%; font-size:16px; text-align: center;">
+                <div id="QR" style="width: 800px; height: 500px; opacity: 0;">
+                    <div id="wechat" style="display: inline-block">
+                        <a class="fancybox" rel="group">
+                            <img id="wechat_qr" src="{{ .Site.Params.WechatPay | absURL }}" alt="wechat_pay" style="width: 250px; height: 250px;"></a>
+                        <p>微信</p>
+                    </div>
+                    <div id="alipay" style="display: inline-block">
+                        <a class="fancybox" rel="group">
+                            <img id="alipay_qr" src="{{ .Site.Params.Alipay | absURL }}" alt="alipay" style="width: 250px; height: 250px;"></a>
+                        <p>支付宝</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
         {{- end }}
