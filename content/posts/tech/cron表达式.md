@@ -9,7 +9,7 @@ categories:
 - tech
 tags: 
 - java
-- tech
+- cron
 description: "cron表达式"
 weight:
 slug: ""

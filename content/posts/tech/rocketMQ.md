@@ -9,7 +9,7 @@ categories:
 - tech
 tags: 
 - java
-- tech
+- rocketMQ
 description: "rocketMQ的命令使用"
 weight:
 slug: ""

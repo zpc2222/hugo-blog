@@ -8,8 +8,8 @@ keywords:
 categories: 
 - tech
 tags: 
-- java
-- tech
+- 运维
+- nginx
 description: "Nginx的一些使用及配置"
 weight:
 slug: ""

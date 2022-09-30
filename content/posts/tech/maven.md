@@ -9,7 +9,7 @@ categories:
 - tech
 tags: 
 - java
-- tech
+- maven
 description: "maven使用命令"
 weight:
 slug: ""

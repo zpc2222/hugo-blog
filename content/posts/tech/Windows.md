@@ -8,8 +8,8 @@ keywords:
 categories: 
 - tech
 tags: 
-- java
-- tech
+- 脚本
+- bat
 description: "windows命令"
 weight:
 slug: ""

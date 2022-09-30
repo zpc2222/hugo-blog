@@ -8,8 +8,8 @@ keywords:
 categories: 
 - tech
 tags: 
-- java
-- tech
+- 脚本
+- shell
 description: "linux环境运行的脚本"
 weight:
 slug: ""

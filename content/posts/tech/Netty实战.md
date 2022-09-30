@@ -9,7 +9,8 @@ keywords:
 categories: 
 - tech
 tags: 
-- tech
+- netty
+- 网络编程
 description: "Java代码编写的一个客户端+服务端的demo实例"
 weight:
 slug: ""

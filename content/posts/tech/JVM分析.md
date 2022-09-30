@@ -9,7 +9,7 @@ categories:
 - tech
 tags: 
 - java
-- tech
+- JVM
 description: "JVM分析方法"
 weight:
 slug: ""
