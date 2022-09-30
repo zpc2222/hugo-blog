@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "posts/tech/Java/数字人民币支付.md",
+            "file": "links.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/tech/Java/数字人民币支付.md",
+                "file": "links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/tech/Java/数字人民币支付.md",
+                "file": "links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/tech/Java/数字人民币支付.md"
+                "file": "links.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "6c8ceb7092a38532",
   "lastOpenFiles": [
+    "posts/tech/Java/数字人民币支付.md",
     "links.md",
     "posts/tech/Windows.md",
     "posts/tools/_index.md",
@@ -138,7 +139,6 @@
     "posts/tools/Linux.md",
     "posts/tools/obsidian.md",
     "about.md",
-    "archives.md",
-    "search.md"
+    "archives.md"
   ]
 }

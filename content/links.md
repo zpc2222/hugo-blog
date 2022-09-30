@@ -19,7 +19,7 @@ cover:
 
 <div class="friend">
 
-{{< friend name="我的个人小站" url="https://zpc2222.github.io" logo="https://zpc2222.github.io/img/Q.gif" word="一个记录技术、生活、分享的小站" >}}
+{{< friend name="沸月月的博客" url="https://blog.zheying.top/" logo="https://blog.zheying.top/img/avatar.png" word="关注互联网以及分享IT软件开发经验的个人博客" >}}
 
 
 </div>
@@ -55,7 +55,7 @@ cover:
 <br/>
 
 <div style="font-size: 20px;">👉广告位招租
- <img src="/img/guanggao.jpg" style="width:100%;height:100%;object-fit: cover;">
+ <img src="https://zpc2222.github.io/img/guanggao.jpg" style="width:100%;height:100%;object-fit: cover;">
 </div>
  
 
