@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "posts/tech/Java/微信支付.md",
+            "file": "posts/blog/blog-music.md",
             "mode": "source",
             "source": false
           }
@@ -57,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/tech/Java/微信支付.md",
+                "file": "posts/blog/blog-music.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/tech/Java/微信支付.md",
+                "file": "posts/blog/blog-music.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/tech/Java/微信支付.md"
+                "file": "posts/blog/blog-music.md"
               }
             }
           }
@@ -130,10 +131,10 @@
   },
   "active": "6c8ceb7092a38532",
   "lastOpenFiles": [
-    "posts/tech/网络编程IO.md",
-    "posts/tech/Java/微信支付.md",
-    "posts/blog/blog-question.md",
     "posts/blog/blog-first.md",
+    "posts/tech/Java/微信支付.md",
+    "posts/tech/网络编程IO.md",
+    "posts/blog/blog-question.md",
     "posts/tech/Windows.md",
     "posts/tech/rocketMQ.md",
     "posts/tech/Netty实战.md",
