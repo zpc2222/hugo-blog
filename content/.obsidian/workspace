@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "posts/blog/blog-music.md",
+            "file": "posts/blog/_index.md",
             "mode": "source",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/blog/blog-music.md",
+                "file": "posts/blog/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/blog/blog-music.md",
+                "file": "posts/blog/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/blog/blog-music.md"
+                "file": "posts/blog/_index.md"
               }
             }
           }
@@ -131,15 +130,15 @@
   },
   "active": "6c8ceb7092a38532",
   "lastOpenFiles": [
-    "posts/blog/blog-first.md",
-    "posts/tech/Java/微信支付.md",
-    "posts/tech/网络编程IO.md",
-    "posts/blog/blog-question.md",
-    "posts/tech/Windows.md",
-    "posts/tech/rocketMQ.md",
-    "posts/tech/Netty实战.md",
-    "posts/tech/Shell脚本.md",
-    "posts/tech/Nginx.md",
-    "posts/tech/Java常用工具类.md"
+    "posts/blog/blog-music.md",
+    "music.md",
+    "about.md",
+    "archives.md",
+    "links.md",
+    "search.md",
+    "posts/life/shopping.md",
+    "posts/life/Medical.md",
+    "posts/life/life-2022.md",
+    "posts/life/eat.md"
   ]
 }

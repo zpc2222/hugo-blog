@@ -25,27 +25,27 @@ showbreadcrumbs: true #顶部显示路径
 
 ---
 
- Shell：
-添加用户
-useradd -d /home/zpc -m zpc
+## Shell命令
+- 添加用户
+>useradd -d /home/zpc -m zpc
 
-查看端口是否开放
-/sbin/iptables -L -n
+- 查看端口是否开放
+>/sbin/iptables -L -n
 
-开端口
-firewall-cmd --zone=public --add-port=81/tcp --permanent
+- 开端口
+>firewall-cmd --zone=public --add-port=81/tcp --permanent
 
-重启防火墙
-systemctl restart firewalld.service
+- 重启防火墙
+>systemctl restart firewalld.service
 
-查看端口
-firewall-cmd --list-ports
+- 查看端口
+>firewall-cmd --list-ports
 
-安装JKD
-wget [https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz](https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz)
+- 安装JKD
+>wget [https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz](https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz)
 
-安装jdk17
-
+- 安装jdk17
+```shell
 /usr/lib/jvm/java-17-openjdk-amd64/
 
 tar -zxvf jdk-17_linux-x64_bin.tar.gz
@@ -61,4 +61,5 @@ export CLASSPATH=.:JAVA_HOME/lib
 export PATH=.:JAVA_HOME/bin:$PATH
 
 source /etc/profile
+```
 

@@ -1,7 +1,7 @@
 ---
-title: "视听"
-date: 2022-09-27T20:01:00+08:00
-lastmod: 2022-09-27T20:01:00+08:00
+title: "音乐"
+date: 2022-09-01T20:01:00+08:00
+lastmod: 2022-10-02T20:01:00+08:00
 author: ["藏锋"]
 keywords: 
 - 博客
@@ -23,29 +23,39 @@ disableShare: true # 底部不显示分享栏
 showbreadcrumbs: true #顶部显示路径
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
 
-Hugo文章里插入图片，我是用的图片url外链方式，MD里的写法是：
+## 我的音乐歌单
 
-　　![测试图片](https://zpc2222.github.io/img/guanggao.jpg)
+<div class="aplayer" data-id="2384590275" data-server="tencent" data-type="playlist" data-mode="circulation" data-autopla="true"></div>
+ 
+---
 
-　　Hugo文章里插入视频，我用的B站外链短代码，这个短代码教程网上一搜就有了。
+### 音乐插件
+写入后，根据id，server自行修改，网易云，QQ音乐，酷狗都支持
 
-　　Hugo文章里插入音频，我还是用的url外链，写法：
+```html
 
-<audio src="https://i.y.qq.com/v8/playsong.html?songid=256430&songtype=0#webchat_redirect" controls="controls" autoplay="autoplay">
-</audio>  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
 
+<div class="aplayer" data-id="2384590275" data-server="tencent" data-type="playlist" data-mode="circulation" data-autopla="true"></div>
+```
 
-<!-- cloud music -->
-<!-- auto=1 可以控制自动播放与否，当值为 1 即打开网页就自动播放，值为 0 时需要访
-客手动点击播放 -->
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="https://music.163.com/outchain/player?type=2&id=413812448&auto=1&height=66"></iframe>
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200618103514921.png)
+#### 参数说明
+主要参数 | 值|
+---|---|
+data-id|歌曲/专辑/歌单 ID
+data-server|netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
+data-type|song （单曲） album （专辑） playlist （歌单） search （搜索）
+data-mode|random （随机） single （单曲） circulation （列表循环） order （列表）
+data-autoplay|false（手动播放） true（自动播放）
 
-
-
-
-https://blog.csdn.net/ds19991999/article/details/81293467
+ ---
+## 哔哩哔哩视频
 
 
 写好了`bilibili.html`中，在markdown里嵌入视频的话，用以下形式写就ok了：
