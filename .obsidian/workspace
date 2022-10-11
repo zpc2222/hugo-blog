@@ -1,37 +1,29 @@
 {
   "main": {
-    "id": "dadac4315237c52e",
+    "id": "312d9cc3880d9a2a",
     "type": "split",
     "children": [
       {
-        "id": "6c8ceb7092a38532",
+        "id": "8482f887c99b23d3",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-<<<<<<< HEAD
-            "file": "posts/blog/blog-question.md",
-=======
-            "file": "posts/life/shopping.md",
->>>>>>> 9ce553ab01b4fcabd7e0c4dc355333f140d5ada0
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f2a28f24dc73f67f",
+    "id": "58c2f781da282fb5",
     "type": "split",
     "children": [
       {
-        "id": "f2f2ae59f7996cde",
+        "id": "6e0180f18713cec3",
         "type": "tabs",
         "children": [
           {
-            "id": "f1bfae44b5301360",
+            "id": "d225c102b149f841",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +31,7 @@
             }
           },
           {
-            "id": "9955cc9ae56ef629",
+            "id": "7a1a18d7646b5394",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -54,7 +46,7 @@
             }
           },
           {
-            "id": "755e275a4c0799a2",
+            "id": "920a33f3ab1ee12f",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -68,24 +60,19 @@
     "width": 300
   },
   "right": {
-    "id": "0d73b09ac334b38e",
+    "id": "df98b87ad2c832c4",
     "type": "split",
     "children": [
       {
-        "id": "a5d8fa5d73a3f4f1",
+        "id": "dd1de9ce2d191d2a",
         "type": "tabs",
         "children": [
           {
-            "id": "795d4f62230140bf",
+            "id": "799aa2e91b5417b2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "posts/blog/blog-question.md",
-=======
-                "file": "posts/life/shopping.md",
->>>>>>> 9ce553ab01b4fcabd7e0c4dc355333f140d5ada0
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,23 +84,18 @@
             }
           },
           {
-            "id": "8ae6d4d4117e4f0e",
+            "id": "0d44634d0f71da13",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "posts/blog/blog-question.md",
-=======
-                "file": "posts/life/shopping.md",
->>>>>>> 9ce553ab01b4fcabd7e0c4dc355333f140d5ada0
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "718d32a578750994",
+            "id": "34b31d425777d430",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -124,58 +106,20 @@
             }
           },
           {
-            "id": "75a3b6bf68ecd988",
+            "id": "dadffaa0b9c9b2d6",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "posts/blog/blog-question.md"
-=======
-                "file": "posts/life/shopping.md"
->>>>>>> 9ce553ab01b4fcabd7e0c4dc355333f140d5ada0
-              }
-            }
-          },
-          {
-            "id": "e5a6a1669ab1fefb",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "6c8ceb7092a38532",
-  "lastOpenFiles": [
-<<<<<<< HEAD
-    "posts/blog/markdown-syntax.md",
-    "posts/work/_index 1.md",
-    "posts/work/obsidian 1.md",
-    "posts/tools/GitHub.md",
-    "posts/tools/Git.md",
-    "posts/tools/Linux.md",
-    "posts/tools/obsidian.md",
-    "posts/tools/_index.md",
-    "posts/_index.md",
-    "posts/life/shopping.md"
-=======
-    "posts/life/Medical.md",
-    "posts/life/life-2022.md",
-    "posts/read/read.md",
-    "posts/tech/Java/微信支付.md",
-    "posts/blog/markdown-use.md",
-    "posts/blog/blog-question.md",
-    "posts/blog/blog-music.md",
-    "posts/blog/blog-github.md",
-    "posts/blog/blog-first.md",
-    "posts/tech/Java/微信小程序相关.md"
->>>>>>> 9ce553ab01b4fcabd7e0c4dc355333f140d5ada0
-  ]
+  "active": "8482f887c99b23d3",
+  "lastOpenFiles": []
 }
