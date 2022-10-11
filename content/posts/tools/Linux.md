@@ -63,3 +63,35 @@ export PATH=.:JAVA_HOME/bin:$PATH
 source /etc/profile
 ```
 
+### 压缩命令
+- tar.gz 使用tar命令进行解压
+>tar -zxvf java.tar.gz
+
+- gz文件的解压 gzip 命令
+>gzip -d java.gz
+
+- 解压gz文件到特定目录,tar.gz包内提取某个文件在指定目录下
+tar包
+>tar tvf yourtarfile |grep fileyouwant，
+  tar xvf yourtarfile fileyouwant(copy上面的全路径用绝对路径)
+
+- tar.gz包
+>tar ztvf yourtargzfile |grep fileyouwant，
+   tar zxvf yourtarfile fileyouwant(copy上面的全路径用绝对路径)
+   
+- tar负责打包，gzip负责压缩
+>tar
+-c: 建立压缩档案
+-x：解压
+-t：查看内容
+-r：向压缩归档文件末尾追加文件
+-u：更新原压缩包中的文件
+
+这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。
+
+>-z：有gzip属性的
+-j：有bz2属性的
+-Z：有compress属性的
+-v：显示所有过程
+-O：将文件解开到标准输出
+ 
