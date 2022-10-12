@@ -104,7 +104,7 @@ $ git config --global https.proxy https://10.xxx.xxx.xxx:1234
 
 >git config --global user.name "gitHub用户名"
 
-> git config--global --edit
+> git config --global --edit
 
 配置文件：
 ```

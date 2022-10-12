@@ -34,7 +34,7 @@ Windows10/11系统
   
   
 ## 常用工具  
-编程工具：IEDA(Java),MobaXterm(SSH+FTP),Apifox(国内版postman)，Git(代码，文档管理)  
+编程工具：IEDA(Java)，MobaXterm(SSH+FTP)，Apifox(国内版postman)，Git(代码，文档管理)  
   
 idea插件：**mybatisX，Power Mode ||，Rainbow Brankets，SequenceDiagram，GitToolBox**  
   
@@ -42,10 +42,9 @@ idea插件：**mybatisX，Power Mode ||，Rainbow Brankets，SequenceDiagram，G
 
 图像管理：PicGo 图床 ~~& Google 相册 ~~  
   
-
 文本比较：Beyond Compare   
   
-网盘同步：坚果云
+网盘同步：坚果云，阿里网盘，百度云盘
   
 ## 系统日常  
   
@@ -54,6 +53,7 @@ idea插件：**mybatisX，Power Mode ||，Rainbow Brankets，SequenceDiagram，G
 输入法：搜狗  
   
 通讯：微信 & 企业微信   
+
 下载：[Aria2](https://one.top/_posts/2018-05-15-aria2_a_new_download_tool.html) & IDM & [Kinhdown](https://baidu.kinh.cc/)(百度云解析)  
   
 ## 低频工具  

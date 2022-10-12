@@ -33,13 +33,13 @@ cover:
 ### 1.启动nameserver
 nohup sh bin/mqnamesrv &
 #### 2.启动broker
-nohup sh bin/mqbroker -n 139.196.206.182:9876 -c conf/broker.conf autoCreateTopicEnable=true &
+nohup sh bin/mqbroker -n 192.168.1.100:9876 -c conf/broker.conf autoCreateTopicEnable=true &
 
 ## 查看日志
 tail -f ~/logs/rocketmqlogs/namesrv.log
 tail -f ~/logs/rocketmqlogs/broker.log
 查看所有topic
-sh mqadmin topicList -n 139.196.206.182:9876
+sh mqadmin topicList -n 192.168.1.100:9876
 
 ## 1.关闭NameServer
 sh bin/mqshutdown namesrv
