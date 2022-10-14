@@ -34,7 +34,8 @@ git push origin HEAD:refs/for/dev
 ```
 
 - 修改最新一次的提交
-``` shellgit rebase -i dev~1
+``` shell
+ git rebase -i dev~1
  pick修改为edit ，保存
  git add .
  git rebase --continue

@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "posts/tools/Git.md",
+            "file": "posts/tools/obsidian.md",
             "mode": "source",
+            "backlinks": false,
             "source": false
           }
         }
@@ -72,35 +73,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dcb1667333df3526",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "posts/tools/Git.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "457a4e89b7d0a8f8",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "posts/tools/Git.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "6b277ee0042bddc7",
             "type": "leaf",
             "state": {
@@ -117,19 +89,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/tools/Git.md"
+                "file": "posts/tools/obsidian.md"
               }
             }
+          },
+          {
+            "id": "7cf5b800c397ff26",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "e1e386ba16b5a933",
   "lastOpenFiles": [
+    "posts/tools/Git.md",
     "posts/blog/blog-github.md",
     "posts/tools/Chrome.md",
     "posts/tools/applist.md",
@@ -138,7 +119,6 @@
     "about.md",
     "posts/_index.md",
     "posts/life/Medical.md",
-    "posts/tools/_index.md",
-    "posts/life/_index.md"
+    "posts/tools/_index.md"
   ]
 }
