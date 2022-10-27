@@ -1,5 +1,5 @@
 ---
-title: "Sindows"
+title: "Windows"
 date: 2022-09-05T00:17:58+08:00
 lastmod: 2022-09-05T00:17:58+08:00
 author: ["藏锋"]

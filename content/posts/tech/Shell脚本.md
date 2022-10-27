@@ -52,3 +52,53 @@ fi
 
 java -jar -Dnet.java.games.input.librarypath=/home/iom/nc-cloud -Xdebug -Xrunjdwp:transport=dt_socket,suspend=n,server=y,address=*:7666 /home/iom/nc-cloud/*.jar --spring.profiles.active=dev &
 ```
+
+Jenkins使用的shell脚本：
+
+``` shell
+#/bin/bash
+#前提：压缩包格式为appname-bin.tar.gz 解压出来的文件夹为appname 例如 app-dev-bin.tar.gz  app-dev
+#下面appname配置要操作的应用名，例app-dev
+appname=app-dev
+echo starting kill $appname......
+#grep -w 完全匹配关键字，打印对应进程名
+pid=`ps -ef|grep -w $appname|grep java|awk '{printf $2}'`
+echo "$appname pid is : $pid"
+#判断进程是否存在，存在则kill、删除原程序目录、解压压缩包、启动程序
+if [ -z $pid ];
+then
+echo "$appname is not running!"
+echo "start rm /home/$appname"
+rm -rf /home/$appname
+echo "tar -zxf $appname-bin.tar.gz"
+#解压到指定目录
+tar -zxf /home/$appname-bin.tar.gz -C /home
+echo "starting $appname...."
+#nohup启动应用，日志输出到对应目录
+nohup java -jar /home/$appname/$appname.jar >/home/log/$appname.log 2>&1 &
+echo "start $appname  success!"
+else
+echo "start kill $pid "
+kill -9 $pid
+echo "end kill $pid "
+echo "start check $appname ...... "
+#睡眠3秒防止进程kill延迟
+sleep 3
+#检查是否杀死进程，杀死则重新部署应用，失败退出
+check=`ps -ef|grep -w $pid|grep java|awk '{printf $2}'`
+if [ -z $check ];
+then
+echo "$appname:$pid is killed success!"
+echo "start rm /home/$appname"
+rm -rf /home/$appname
+echo "tar -zxf $appname-bin.tar.gz"
+tar -zxf /home/$appname-bin.tar.gz -C /home
+echo "starting $appname...."
+nohup java -jar /home/$appname/$appname.jar >/home/log/$appname.log 2>&1 &
+echo "start $appname  success!"
+else
+echo "$appname  stop failed !!!!"
+fi
+fi
+
+```
