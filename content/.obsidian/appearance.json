@@ -1,4 +1,5 @@
 {
   "cssTheme": "Obsidian Nord",
-  "accentColor": ""
+  "accentColor": "",
+  "nativeMenus": true
 }
