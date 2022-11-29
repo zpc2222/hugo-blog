@@ -11,7 +11,7 @@ categories:
 tags: 
 - netty
 - 网络编程
-description: "Java代码编写的一个客户端+服务端的demo实例"
+description: "Java代码编写的一个客户端+服务端的demo实例，入门级"
 weight:
 slug: ""
 draft: false # 是否为草稿

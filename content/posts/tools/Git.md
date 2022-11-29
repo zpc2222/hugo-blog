@@ -134,3 +134,20 @@ $ git config --global https.proxy https://10.xxx.xxx.xxx:1234
 ```
 
 
+### Git报错
+Unable to negotiate with xxx.xxx.xxx.xxx port XX: no matching host key type found. Their offer: ssh-rsa,ssh-dss fatal: Could not read from remote repository.
+
+### 解决：
+
+> 前提： 在排除没有配置公钥的情况下。
+
+1.  在Git的安装目录下 `Git > etc > ssh` 文件夹下找到 `ssh_config` 文件 。
+2.  在文件末尾添加一下代码。
+
+```bash
+# 注意这里的 xxx.com 是没有 https:// 的
+# 如 https://github.com/， 填写 github.com 即可（最后的斜杆也不能要）。
+Host xxx.com
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+```
