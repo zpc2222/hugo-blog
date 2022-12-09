@@ -319,3 +319,8 @@ mapper扫描注解,功能与MP的@MapperScan一致
 启动成功，打印：Congratulations auto process index by Easy-Es is don
 
 具体使用，可以参考代码里面的test工程，工程名：easy-es-test  路径：cn.easyes.test
+
+## 不足
+
+ee源码使用的是1.8版本JDK，实际使用过程中，如果项目是Java17（22年，Java19都发布了），会发现不兼容，
+目前暂无解决版本，已提issue，给的结论是:目前还不支持jdk 17

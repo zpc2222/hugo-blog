@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d96aa7ae294f261d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/life/year.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/tech/Es入门-easy-es.md"
+                "file": "posts/life/year.md"
               }
             }
           },
@@ -124,17 +138,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b0007506bd21cd19",
+  "active": "d96aa7ae294f261d",
   "lastOpenFiles": [
-    "posts/tech/cron表达式.md",
+    "posts/life/life-2022.md",
+    "posts/blog/blog-question.md",
+    "posts/tech/Java/微信小程序相关.md",
+    "posts/life/year.md",
+    "posts/blog/blog-github.md",
+    "posts/life/eat.md",
     "posts/tech/Es入门-easy-es.md",
-    "posts/tech/网络编程IO.md",
-    "posts/tech/Windows.md",
-    "posts/tech/Shell脚本.md",
-    "posts/tech/maven.md",
-    "posts/tech/Netty实战.md",
-    "posts/tools/Git.md",
-    "posts/tech/Java/Java常用速记.md",
-    "posts/tech/Java/微信支付.md"
+    "posts/life/Medical.md",
+    "posts/life/shopping.md",
+    "posts/tech/cron表达式.md"
   ]
 }

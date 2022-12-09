@@ -9,7 +9,7 @@ categories:
 - life
 tags: 
 - 生活
-description: ""
+description: "日常用品"
 weight:
 slug: ""
 draft: false # 是否为草稿
