@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/life/year.md",
+                "file": "posts/life/2022-xinguan.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/life/year.md"
+                "file": "posts/life/2022-xinguan.md"
               }
             }
           },
@@ -141,14 +141,14 @@
   "active": "d96aa7ae294f261d",
   "lastOpenFiles": [
     "posts/life/life-2022.md",
+    "posts/life/2022-xinguan.md",
+    "posts/life/Medical.md",
+    "posts/life/year.md",
     "posts/blog/blog-question.md",
     "posts/tech/Java/微信小程序相关.md",
-    "posts/life/year.md",
     "posts/blog/blog-github.md",
     "posts/life/eat.md",
     "posts/tech/Es入门-easy-es.md",
-    "posts/life/Medical.md",
-    "posts/life/shopping.md",
-    "posts/tech/cron表达式.md"
+    "posts/life/shopping.md"
   ]
 }
