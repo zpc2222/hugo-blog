@@ -1,5 +1,5 @@
 ---
-title: "github部署静态博客"
+title: "基于github部署静态博客"
 date: 2022-09-30T12:01:00+08:00
 lastmod: 2022-10-01T13:01:00+08:00
 author: ["藏锋"]
