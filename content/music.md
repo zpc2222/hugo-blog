@@ -11,7 +11,7 @@ comments: true
 reward: false
 showToc: false # 显示目录
 TocOpen: false # 自动展开目录
-disableShare: true # 底部不显示分享栏
+disableShare: false # 底部不显示分享栏
 showbreadcrumbs: false
 cover:
     image: ""
@@ -31,5 +31,6 @@ cover:
 
 <div class="aplayer" data-id="2384590275" data-server="tencent" data-type="playlist" data-mode="circulation" data-autopla="true"></div>
 
+<div/>
 
-hugo插入音乐方法，参考文章：[视听 | 我的个人小站 (zpc2222.github.io)](https://zpc2222.github.io/posts/blog/blog-music/)
+hugo博客插入音乐方法，参考文章：[视听 | 我的个人小站 (zpc2222.github.io)](https://zpc2222.github.io/posts/blog/blog-music/)
