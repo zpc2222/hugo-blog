@@ -1,5 +1,5 @@
 ---
-title: "springboot接入微信支付"
+title: "Java常用速记"
 date: 2022-11-02T00:13:13+08:00
 lastmod: 2022-11-02T00:13:13+08:00
 author: ["藏锋"]

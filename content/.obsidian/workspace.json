@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/tech/JVM分析.md",
+                "file": "posts/tech/JVM analysis.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/tech/MybatisPlus.md",
+                "file": "posts/life/2022-xinguan.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -93,8 +93,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/tech/MybatisPlus.md"
+                "file": "posts/life/2022-xinguan.md"
               }
             }
           },
@@ -165,13 +164,22 @@
   },
   "active": "fb74cc0fe2c73439",
   "lastOpenFiles": [
-    "posts/tech/maven.md",
-    "posts/tech/草稿.md",
-    "posts/tech/MybatisPlus.md",
-    "posts/tech/JVM分析.md",
-    "posts/tech/Java常用工具类.md",
+    "posts/life/shopping.md",
+    "posts/life/Web plugin.md",
     "posts/life/2022-xinguan.md",
-    "posts/life/2023.md",
+    "posts/tech/Network Programming IO.md",
+    "posts/tech/Shell script.md",
+    "posts/tech/Netty in action.md",
+    "posts/tech/JVM analysis.md",
+    "posts/tech/Java/Java Common Utils.md",
+    "posts/tech/cron expression.md",
+    "posts/tech/草稿.md",
+    "posts/tech/Java/Wechat mini program.md",
+    "posts/tech/Java/spring security framework.md",
+    "posts/tech/Java/Java Common.md",
+    "posts/tech/Java/wechatPay.md",
+    "posts/tech/MybatisPlus.md",
+    "posts/tech/maven.md",
     "posts/life/eat.md",
     "未命名.canvas",
     "posts/blog/blog-github.md",
@@ -182,9 +190,6 @@
     "search.md",
     "links.md",
     "archives.md",
-    "about.md",
-    "posts/blog/_index.md",
-    "posts/blog/_Index_of_blog.md",
-    "posts/life/_index.md"
+    "about.md"
   ]
 }
