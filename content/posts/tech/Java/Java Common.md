@@ -59,7 +59,41 @@ Map<Integer, List<MobildUserEntity>> map = userList.stream().collect(Collectors.
 
 
 
+树状图
+```
+//将list，根据省市区信息分开，展示为树状图    
+Map<String, List<Station>> lists = stations.stream().filter(x -> x.getProvince() != null && x.getCity() != null).collect(Collectors.groupingBy(Station::getProvince, LinkedHashMap::new, Collectors.toCollection(ArrayList::new)));
+        //返回格式
+        List<StationTreeVO> provinceList = new ArrayList<>();
+        //遍历
+        for (Map.Entry<String, List<Station>> entry : lists.entrySet()) {
+            StationTreeVO province = new StationTreeVO();
+            //获取list集合
+            List<Station> value = entry.getValue();
+            province.setProvince(entry.getKey());
+            List<StationTreeVO.City> cityList = new ArrayList<>();
+            //保持原有顺序-（LinkedHashMap按插曲顺序排序）
+            Map<String, List<Station>> cityStreamList = value.stream().collect(Collectors.groupingBy(Station::getCity, LinkedHashMap::new, Collectors.toCollection(ArrayList::new)));
+            for (Map.Entry<String, List<Station>> cityEntry : cityStreamList.entrySet()) {
+                StationTreeVO.City city = new StationTreeVO.City();
+                List<StationTreeVO.CityArea> areaList = new ArrayList<>();
+                city.setCity(cityEntry.getKey());
+                //获取list集合
+                List<Station> areaValue = cityEntry.getValue();
+                Map<String, List<Station>> areaStreamList = areaValue.stream().collect(Collectors.groupingBy(Station::getArea, LinkedHashMap::new, Collectors.toCollection(ArrayList::new)));
+                for (Map.Entry<String, List<Station>> areaEntry : areaStreamList.entrySet()) {
+                    StationTreeVO.CityArea area = new StationTreeVO.CityArea();
+                    area.setArea(areaEntry.getKey());
+                    List<Station> stationList = areaEntry.getValue();
+                    area.setStationList(coverTree(stationList));
+                    areaList.add(area);
+                }
+                city.setAreaList(areaList);
+                cityList.add(city);
+            }
+            province.setCityList(cityList);
+            provinceList.add(province);
+        }
 
-## List
-### ArrayList
+```
 
