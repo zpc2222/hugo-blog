@@ -1,7 +1,7 @@
 ---
 title: "Shell脚本"
 date: 2022-09-05T00:17:58+08:00
-lastmod: 2022-09-05T00:17:58+08:00
+lastmod: 2023-03-14T00:17:58+08:00
 author: ["藏锋"]
 keywords: 
 - jvm
@@ -10,7 +10,7 @@ categories:
 tags: 
 - 脚本
 - shell
-description: "linux环境运行的脚本"
+description: "常用的一些shell语法"
 weight:
 slug: ""
 draft: false # 是否为草稿
@@ -29,14 +29,14 @@ cover:
     relative: false
 ---
 
-shell启动脚本
+## jar启动脚本
 ```shell
 java  -Xms1024m -Xmx1024m -Xmn512m -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:7665 -jar oc-app-test.jar &
 java -jar-Dnet.java.games.input.librarypath=/home/oc/oc-app-test -Xdebug-Xrunjdwp:transport=dt_socket,suspend=n,server=y,address=*:7665/home/oc/oc-app-test/*.jar &
 
 ```
 
-nccloud启动脚本
+## jar启动脚本2
 ```shell
 #!/bin/sh
 
@@ -53,7 +53,7 @@ fi
 java -jar -Dnet.java.games.input.librarypath=/home/iom/nc-cloud -Xdebug -Xrunjdwp:transport=dt_socket,suspend=n,server=y,address=*:7666 /home/iom/nc-cloud/*.jar --spring.profiles.active=dev &
 ```
 
-Jenkins使用的shell脚本：
+## Jenkins使用的shell脚本：
 
 ``` shell
 #/bin/bash
@@ -102,3 +102,37 @@ fi
 fi
 
 ```
+
+## systemctl 方式 
+```
+
+守护进程重启 sudo systemctl daemon-reload
+重启docker服务 sudo systemctl restart docker
+关闭 dockersudo systemctl stop docker
+service 方式
+重启docker服务 sudo service docker restart
+关闭 dockersudo service docker stop
+添加用户	useradd -d /home/zpc -m zpc
+查看端口是否开放	/sbin/iptables -L -n
+开端口	firewall-cmd --zone=public --add-port=81/tcp --permanent
+重启防火墙	systemctl restart firewalld.service
+查看端口	firewall-cmd --list-ports
+
+```
+
+## 安装jdk17
+
+```
+wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
+安装jdk17
+
+/usr/lib/jvm/java-17-openjdk-amd64/
+tar -zxvf jdk-17_linux-x64_bin.tar.gz
+sudo mv jdk-17.0.1 /usr/local/
+sudo vim /etc/profile
+export JAVA_HOME=/usr/local/jdk-17.0.1
+export CLASSPATH=.:JAVA_HOME/lib
+export PATH=.:JAVA_HOME/bin:$PATH
+source /etc/profile
+```
+

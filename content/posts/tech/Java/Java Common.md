@@ -97,3 +97,8 @@ Map<String, List<Station>> lists = stations.stream().filter(x -> x.getProvince()
 
 ```
 
+
+## 对图片文件转为Base64
+图片转为字符串进行保存或者传输
+selectStatistics.put("basePhoto","data:image/jpeg;base64,"+
+Base64.getMimeEncoder().encodeToString(Files.readAllBytes(Paths.get(basePhotoPath))));

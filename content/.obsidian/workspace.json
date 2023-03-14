@@ -52,7 +52,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/tech/Git Common.md",
+                "file": "posts/tech/草稿.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "99d5ff8e962a3080",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/tech/草稿.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f5d53a91dddb5a61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/tech/Mysql.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -60,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -137,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/tech/Git Common.md"
+                "file": "posts/tech/Mysql.md"
               }
             }
           },
@@ -178,31 +204,31 @@
   "active": "7cf5b800c397ff26",
   "lastOpenFiles": [
     "posts/tech/草稿.md",
-    "posts/tech/Git Common.md",
+    "posts/tech/Mysql.md",
+    "posts/tech/Shell script.md",
+    "posts/tech/Nginx.md",
+    "posts/tech/Netty in action.md",
+    "posts/tech/Network Programming IO.md",
     "posts/tech/Java/Java Common.md",
+    "posts/tech/Grab bag.md",
+    "posts/tech/Git Common.md",
+    "posts/tech/maven.md",
     "posts/tech/Java/Java Common Utils.md",
     "posts/tech/Java/JVM analysis.md",
     "posts/life/2022-xinguan.md",
     "posts/life/shopping.md",
     "posts/life/Web plugin.md",
-    "posts/tech/Network Programming IO.md",
-    "posts/tech/Shell script.md",
-    "posts/tech/Netty in action.md",
     "posts/tech/cron expression.md",
     "posts/tech/Java/Wechat mini program.md",
     "posts/tech/Java/spring security framework.md",
     "posts/tech/Java/wechatPay.md",
     "posts/tech/MybatisPlus.md",
-    "posts/tech/maven.md",
     "posts/life/eat.md",
     "未命名.canvas",
     "posts/blog/blog-github.md",
     "posts/_index.md",
     "posts/tools/_index.md",
     "posts/blog/blog-music.md",
-    "music.md",
-    "search.md",
-    "links.md",
-    "archives.md"
+    "music.md"
   ]
 }

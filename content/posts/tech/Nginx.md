@@ -4,7 +4,7 @@ date: 2022-09-05T00:17:58+08:00
 lastmod: 2022-10-12T11:10:00+08:00
 author: ["藏锋"]
 keywords: 
-- jvm
+- nginx
 categories: 
 - tech
 tags: 
@@ -76,7 +76,9 @@ nginx -t
 ```
 
 出现显示nginx.conf 即可
-# 配置
+
+
+## 配置
 ```
 user www-data;
 worker_processes auto;
@@ -236,7 +238,7 @@ http{ #http块
 4、 ^~：用于不含正则表达式的 uri 前，要求 Nginx 服务器找到标识 uri 和请求字符串匹配度最高的 location 后，立即使用此 location 处理请求，而不再使用 location块中的正则 uri 和请求字符串做匹配。
 注意：如果 uri 包含正则表达式，则必须要有~ 或者 ~*标识。
 
-## proxy_pass带斜杠
+### proxy_pass带斜杠
 
 proxy_pass末尾有斜杠 / ，proxy_pass不拼接location的路径
 ```
@@ -256,7 +258,7 @@ proxy_pass http://127.0.0.1:8000;
  
 请求地址：http://localhost/api/test
 转发地址：http://127.0.0.1:8000/api/test
-## 负载均衡
+### 负载均衡
 
 在 nginx 配置文件中进行负载均衡的配置
 
@@ -279,7 +281,7 @@ http {
     }
 }
 ```
-## 负载均衡策略
+### 负载均衡策略
 
 1. 轮询（默认）
 
@@ -321,6 +323,61 @@ upstream myservere {
 ```
 
 
+## websocket配置项
+websocket配置项  超时时间要配置久点,默认90秒太短，前端也要发心跳，防止断联
+
+```
+
+@ServerEndpoint(value="/webSocket/notice")
+
+server {
+      listen   80;
+      server_name 域名;
+      location /webSocket {
+       proxy_pass  http://radp:8888/webSocket/notice; // 代理转发地址
+ 　 proxy_http_version 1.1;
+       proxy_read_timeout   1800s; // 超时设置
+       // 启用支持websocket连接
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+      }
+      location /upload { // 静态资源地址
+            root   /mnt/resources;        
+      }
+}
+
+```
+
+## Java服务转发
+
+```
+ Java服务 转发
+    location  /rdapapi/ {
+            client_max_body_size 100M;
+            proxy_pass http://radp:8888/;
+            proxy_connect_timeout 300s;
+            proxy_send_timeout 900;
+            proxy_read_timeout 900;
+            proxy_buffer_size 32k;
+            proxy_buffers 4 64k;
+            proxy_busy_buffers_size 128k;
+            proxy_redirect default;
+            proxy_hide_header Vary;
+            proxy_set_header Accept-Encoding '';
+            proxy_set_header Referer $http_referer;
+
+            proxy_set_header Cookie $http_cookie;
+            proxy_set_header Host $host:$server_port;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header HTTP_X_FORWARDED_FOR $remote_addr;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header X-NginX-Proxy true;
+            proxy_http_version 1.1;
+            proxy_set_header Connection "";
+    }
+    
+```
 ## tips
 Linux 服务器上防火墙会端口拦截，所以需要在防火墙中开放80 端口，也可以直接关闭防火墙，这儿提供允许80端口方法
 
