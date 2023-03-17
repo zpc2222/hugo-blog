@@ -1,5 +1,5 @@
 ---
-title: "Git常用"
+title: "Git使用"
 date: 2023-03-14T00:00:00+08:00
 lastmod: 2023-03-14T00:00:00+08:00
 author: ["藏锋"]
@@ -10,7 +10,7 @@ categories:
 tags: 
 - util
 - git
-description: "Git常用记录"
+description: "Git日常使用及问题记录"
 weight:
 slug: ""
 draft: false # 是否为草稿
@@ -71,8 +71,26 @@ git stash
 
 改完bug之后再stash pop, 继续原来的工作。
 git stash pop
-
 ```
+### git强制覆盖本地仓库
+拉取所有更新，不同步；
+ >git fetch --all
+
+本地代码同步线上最新版本(会覆盖本地所有与远程仓库上同名的文件)；`
+
+>git reset --hard origin/master
+
+再更新一次（其实也可以不用，第二步命令做过了其实）`
+
+>git pull
+
+>git fetch --all && git reset --hard origin/master && git pull
+
+- 绑定本地分支与远端的分支，直接pull
+ ``` shell
+ git branch --set-upstream-to=origin/work work
+```
+
 
 ## 安装及配置
 
@@ -156,17 +174,8 @@ $ cat .gitconfig  //查看当前用户的git配置文件
 $ git checkout -- test.txt 取消对文件的修改
 ```
 
-## 问题
+## Tips
 
-### ssh：no matching host key type found. Their offer: ssh-dss
-```
-在.ssh目录下创建config文件，并复制以下信息填入：
-
-Host *
-    HostKeyAlgorithms +ssh-rsa
-    PubkeyAcceptedKeyTypes +ssh-rsa
-    KexAlgorithms +diffie-hellman-group1-sha1
-```
 
 ### 全局配置文件及commit模板指定
 git config --global --edit
@@ -193,4 +202,30 @@ git config --global --edit
     template=D:\\xxx.template
 [gui]
     encoding=utf-8
+```
+
+### git github在内网环境设置代理访问报错：
+fatal: unable to access 'https://github.com/XXX': Could not resolve host: github.com
+Unable to fetch in submodule path ‘XXX'
+
+解决：
+``` shell
+$ git config --global http.proxy 127.0.0.1:10809
+$ git config --global https.proxy https://10.xxx.xxx.xxx:1234
+```
+配置为代理，即可
+
+### Unable to negotiate with xxx.xxx.xxx.xxx port XX: no matching host key type found. Their offer: ssh-rsa,ssh-dss fatal: Could not read from remote repository.
+
+> 前提： 在排除没有配置公钥的情况下。
+
+1.  在Git的安装目录下 `Git > etc > ssh` 文件夹下找到 `ssh_config` 文件 。
+2.  在文件末尾添加一下代码。
+
+```bash
+# 注意这里的 xxx.com 是没有 https:// 的
+# 如 https://github.com/， 填写 github.com 即可（最后的斜杆也不能要）。
+Host xxx.com
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
 ```

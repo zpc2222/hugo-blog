@@ -1,5 +1,5 @@
 ---
-title: "音乐"
+title: "🎧音乐"
 layout: about
 date: 2022-10-01T18:44:28+08:00
 hidemeta: true
