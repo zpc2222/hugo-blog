@@ -102,3 +102,20 @@ Map<String, List<Station>> lists = stations.stream().filter(x -> x.getProvince()
 图片转为字符串进行保存或者传输
 selectStatistics.put("basePhoto","data:image/jpeg;base64,"+
 Base64.getMimeEncoder().encodeToString(Files.readAllBytes(Paths.get(basePhotoPath))));
+
+## 反射调用
+
+ 这里通过反射调用方法,带入ScheduleConfigBO的参数
+```java
+            Class<?> clazz = Class.forName(config.getClassName());
+            String className = lowerFirstCapse(clazz.getSimpleName());
+            Object bean = ApplicationContextHelper.getBean(className);
+            assert bean != null;
+            Method methodArgs = ReflectionUtils.findMethod(bean.getClass(), EXECUTE_METHOD, TaskConfigVO.class);
+            Method method = ReflectionUtils.findMethod(bean.getClass(), EXECUTE_METHOD);
+            if (methodArgs != null) {
+                log.debug("invoke method [{}] with args [{}]", EXECUTE_METHOD, config);
+                ReflectionUtils.invokeMethod(methodArgs, bean, config);
+            }
+
+```

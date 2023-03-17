@@ -1,5 +1,5 @@
 ---
-title: "maven"
+title: "Maven使用"
 date: 2022-09-05T00:17:58+08:00
 lastmod: 2022-09-05T00:17:58+08:00
 author: ["藏锋"]
@@ -10,7 +10,7 @@ categories:
 tags: 
 - java
 - maven
-description: "maven使用命令"
+description: "Maven常用"
 weight:
 slug: ""
 draft: false # 是否为草稿
